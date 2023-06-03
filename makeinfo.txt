@@ -1,0 +1,25 @@
+dropoff 가 되면 나는 Sub를 통해 신호를 받는다.
+
+이때 64 bytes 크기를 가진 Ride-ID를 가지는데 
+
+이 ID를 통해서 DB(JSON)에서 데이터를 가져와야하는데
+
+학생 수준이기 때문에 DB는 서로 공유하지 않고 각자 제작함
+
+1. eqoch (timestamp)
+2. DropoffComplete/>
+=> JSON 형식으로 오며 Timestamp, RIDE-ID, Location, USER-ID 의 데이터를 받는다.
+3. 이 데이터를 받으면, DB에 저장된 자료를 이용,
+RIDE-ID와 USER-ID, Timestamp로 DB를 검색하여
+Cost를 특정한다.
+
+Payment를 loaded balancing을 하기 위해서
+non - exclusive한 Queue를 만들어, Topic을 DropoffComplete로 만들고
+Queue에 붙여서 데이터를 받도록 한다.
+이를 통해 Round-Robin 받게 하여, 부하를 분산시킬 수 있다.
+
+동일한 event가 Company에도 들어가고, indivisualQ에도 들어간다.
+
+거리, 현재 몇시 몇분.. 등 모든 결제에 필요한 모든 정보가 들어간다.
+
+DB를 접속했을 때, 가장 최신 데이터를 가져와야한다.

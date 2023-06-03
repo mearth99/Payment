@@ -1,0 +1,57 @@
+[
+  {
+    "area":"Seoul",
+    "lat":37,
+    "lon":126,
+    "areacode":"AREA-1"
+  },
+  {
+    "area":"Gangwon-do",
+    "lat":37,
+    "lon":128,
+    "areacode":"AREA-2"
+  },
+  {
+    "area":"Gyeonggi-do",
+    "lat":37,
+    "lon":127,
+    "areacode":"AREA-3"
+  },
+  {
+    "area":"Gyeongsangnam-do",
+    "lat":35,
+    "lon":128,
+    "areacode":"AREA-4"
+  },
+  {
+    "area":"Gyeongsangbuk-do",
+    "lat":36,
+    "lon":128,
+    "areacode":"AREA-5"
+  },
+  {
+    "area":"Chung-cheong bukdo",
+    "lat":36,
+    "lon":127,
+    "areacode":"AREA-6"
+  },
+  {
+    "area":"Chungcheongnam-do",
+    "lat":36,
+    "lon":126,
+    "areacode":"AREA-7"
+  },
+  {
+    "area":"Jeollanam-do",
+    "lat":34,
+    "lon":126,
+    "areacode":"AREA-8"
+  },
+  {
+    "area":"Jeollabuk do",
+    "lat":35,
+    "lon":127,
+    "areacode":"AREA-9"
+  }
+
+]
